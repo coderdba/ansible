@@ -1,0 +1,4 @@
+- name: step1
+  hosts: all
+  tasks: 
+    - debug: msg="group variable - {{ group_var1 }}"
