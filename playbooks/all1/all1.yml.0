@@ -1,0 +1,4 @@
+- name: Running base code
+  hosts: all
+  roles:
+  - { role: base,  tags: [ 'base' ] }
