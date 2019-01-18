@@ -8,6 +8,9 @@
 - name: group variables
   debug: msg="group variable - {{ group_var1 }}"
 
+- name: included file variables
+  debug: msg="os variable value - {{ os }}"
+
 - name: run a shell command and list output
   shell: "cat /etc/hosts"
   register: shell_result
@@ -15,3 +18,5 @@
 - name: list output of previous command
   debug: 
     var: shell_result.stdout_lines
+
+
