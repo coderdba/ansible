@@ -1,3 +1,6 @@
 ---
 - name: base task1
   command: hostname
+
+- name: group variables
+  debug: msg="group variable - {{ group_var1 }}"
