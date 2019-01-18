@@ -1,6 +1,17 @@
 ---
-- name: base task1
-  command: hostname
+- name: run command hostname on client - NOTE this wont show anything on screen
+  command: "/bin/hostname"
+
+- name: display ansible hostname
+  debug: msg="ansible_hostname is - {{ ansible_hostname }}"
 
 - name: group variables
   debug: msg="group variable - {{ group_var1 }}"
+
+- name: run a shell command and list output
+  shell: "cat /etc/hosts"
+  register: shell_result
+
+- name: list output of previous command
+  debug: 
+    var: shell_result.stdout_lines
