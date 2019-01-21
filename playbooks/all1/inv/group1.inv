@@ -1,5 +1,6 @@
 [all:vars]
-all_var1=yes_this_is_all_var1
+all_var1=yes_this_is_all_var1_in_group1
+os_flavor=oel
 
 [group1:children]
 local

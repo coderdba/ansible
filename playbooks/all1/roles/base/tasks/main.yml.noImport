@@ -1,12 +1,13 @@
-Group variables*
-Roles
-Tags
-Include specific yml
-main.yml
+---
 
-Tags - with 'debug' statement is not working
+- include_vars: 
+    file: "{{ os_flavor }}.yml"
+
 - name: included file variables
   #debugger: on_failed
   debug: msg="os variable value - {{ os }}"
   # tag here gives error that the variable os is not known
   #tags: osprint
+  #tags:
+    #- 'osprint'
+

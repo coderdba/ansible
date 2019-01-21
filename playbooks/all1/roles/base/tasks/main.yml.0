@@ -1,0 +1,6 @@
+---
+
+- include_vars: 
+    file: "{{ os_flavor }}.yml"
+
+- import_tasks: task1.yml

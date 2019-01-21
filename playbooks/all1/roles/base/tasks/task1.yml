@@ -1,4 +1,8 @@
 ---
+- name: print the all-groups common variable
+  debug: msg="the variable all_var1 has value - {{ all_var1 }} "
+  tags: osprint
+
 - name: run command hostname on client - NOTE this wont show anything on screen
   command: "/bin/hostname"
 
@@ -15,6 +19,8 @@
   debug: msg="os variable value - {{ os }}"
   # tag here gives error that the variable os is not known
   #tags: osprint
+  #tags:
+    #- 'osprint'
 
 - name: run a shell command and list output
   shell: "cat /etc/hosts"
@@ -24,4 +30,7 @@
   debug: 
     var: shell_result.stdout_lines
 
-
+#- name: run from utils role
+    #- include_role: 
+        #name: util
+        #tasks_from: util1.yml

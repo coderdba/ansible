@@ -1,5 +1,5 @@
 [all:vars]
-all_var1=yes_this_is_all_var1
+all_var1=yes_this_is_all_var1_in_group2
 os_flavor=oel
 
 [group2:children]
