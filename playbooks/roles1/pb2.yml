@@ -1,0 +1,6 @@
+- name: run from utils role
+  hosts: all
+  tasks:
+    - include_role:
+        name: util
+        tasks_from: util1.yml

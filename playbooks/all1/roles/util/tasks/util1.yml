@@ -1,0 +1,12 @@
+---
+
+- name: util - display ansible hostname
+  debug: msg="util - ansible_hostname is - {{ ansible_hostname }}"
+
+- name: util - run a shell command and list output
+  shell: "cat /etc/hosts"
+  register: shell_result
+
+- name: util - list output of previous command
+  debug: 
+    var: shell_result.stdout_lines

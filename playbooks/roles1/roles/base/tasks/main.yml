@@ -1,0 +1,12 @@
+---
+
+- debug: msg="i am in role base"
+
+
+# This is not working properly - seems to start a new play but does not display any output from tasks
+#- name: run from utils role
+  #hosts: all
+  #tasks:
+    #- include_role:
+        #name: util
+        #tasks_from: util1.yml

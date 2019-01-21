@@ -1,4 +1,5 @@
 ---
+
 - name: print the all-groups common variable
   debug: msg="the variable all_var1 has value - {{ all_var1 }} "
   tags: osprint

@@ -1,0 +1,12 @@
+[all:vars]
+all_var1=yes_this_is_all_var1_in_group1
+os_flavor=oel
+
+[group1:children]
+local
+
+[local]
+mylocalhost ansible_host=127.0.0.1 ansible_port=2222 ansible_user=root
+
+
+
