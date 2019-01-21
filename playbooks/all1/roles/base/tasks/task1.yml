@@ -4,13 +4,17 @@
 
 - name: display ansible hostname
   debug: msg="ansible_hostname is - {{ ansible_hostname }}"
+  tags: osprint
 
 - name: group variables
   debug: msg="group variable - {{ group_var1 }}"
+  tags: osprint
 
 - name: included file variables
+  #debugger: on_failed
   debug: msg="os variable value - {{ os }}"
-  tags: osprint
+  # tag here gives error that the variable os is not known
+  #tags: osprint
 
 - name: run a shell command and list output
   shell: "cat /etc/hosts"

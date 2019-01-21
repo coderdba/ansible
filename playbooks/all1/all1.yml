@@ -1,4 +1,5 @@
 - name: Running base code
   hosts: all
+  #debugger: on_failed
   roles:
   - { role: base }
