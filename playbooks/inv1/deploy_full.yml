@@ -1,0 +1,7 @@
+- name: EXECUTING INV READ
+  hosts: worker
+  become: yes
+  tasks:
+    - with_items: "{{ worker_list }}"
+      loop_control:
+        loop_var: worker_vm_ipaddr
