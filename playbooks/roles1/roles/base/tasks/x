@@ -19,7 +19,7 @@ Options:
   -h, --help            show this help message and exit
   -i INVENTORY, --inventory=INVENTORY, --inventory-file=INVENTORY
                         specify inventory host path
-                        (default=[[u'/Users/dbgsm0/opt/ansible/hosts']]) or
+                        (default=[[u'/Users/username/opt/ansible/hosts']]) or
                         comma separated host list. --inventory-file is
                         deprecated
   -l SUBSET, --limit=SUBSET
@@ -30,7 +30,7 @@ Options:
   --list-tasks          list all tasks that would be executed
   -M MODULE_PATH, --module-path=MODULE_PATH
                         prepend colon-separated path(s) to module library
-                        (default=[u'/Users/dbgsm0/.ansible/plugins/modules',
+                        (default=[u'/Users/username/.ansible/plugins/modules',
                         u'/usr/share/ansible/plugins/modules'])
   --new-vault-id=NEW_VAULT_ID
                         the new vault identity to use for rekey
